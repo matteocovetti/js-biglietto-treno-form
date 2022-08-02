@@ -24,4 +24,9 @@ function calcPrezzo(event){
         prezzoBiglietto -= prezzoBiglietto * scontoAnziani;
     }
     // console.log(prezzoBiglietto);
+    const div = document.getElementById('items');
+    let p = document.createElement('p');
+    p.innerHTML = 'Il biglietto di km: ' + km + " per il passeggero di età: " + eta + ' ha il costo di: ' + prezzoBiglietto + '€';
+    div.appendChild(p);
+
 }
